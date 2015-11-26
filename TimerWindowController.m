@@ -63,7 +63,7 @@
 
 	[window makeKeyAndOrderFront: self];
 
-	killBlockButton_.hidden = YES;
+//	killBlockButton_.hidden = YES;
 	addToBlockButton_.hidden = NO;
 
 	NSDictionary* lockDict = [NSDictionary dictionaryWithContentsOfFile: SelfControlLockFilePath];
@@ -147,7 +147,7 @@
 			// OK, so apparently scheckup couldn't remove the block either. Enable manual block removal.
 			if (numStrikes == 10) NSLog(@"WARNING: Block should have ended a minute ago! Probable permablock.");
 			addToBlockButton_.hidden = YES;
-			killBlockButton_.hidden = NO;
+//			killBlockButton_.hidden = NO;
 		}
 
 		return;
